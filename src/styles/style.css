@@ -52,6 +52,7 @@ button a,
 button a:hover {
   color: #1B263B;
   text-decoration: none;
+  cursor: url('/src/img/assets/cursors/pointer.gif'), auto;
 }
 
 #container {

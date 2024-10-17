@@ -3,6 +3,9 @@
 }
 
 body {
+  background-image: url('/src/img/assets/graphics/autumn-leaves.gif');
+	background-repeat: no-repeat;
+	background-position: top left;
   width: 100%;
   font-family: monospace;
   margin: 0;
@@ -13,6 +16,7 @@ body {
   background-color: #1B263B;
   color: #CCCC99;
   font-size: 1rem;
+  cursor: url('/src/img/assets/cursors/ufocursor.gif'), auto;
 }
 
 a,
@@ -20,6 +24,7 @@ a:hover,
 a:visited {
   color: #CCCC99;
   text-decoration: underline;
+  cursor: url('/src/img/assets/cursors/pointer.gif'), auto;
 }
 
 code {

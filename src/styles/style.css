@@ -60,6 +60,13 @@ button a:hover {
   margin: 0 auto;
 }
 
+.hcard {
+  background-image: url('../img/assets/graphics/funnyalien.gif');
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 0;
+}
+
 .title {
   background-color: #CCCC99;
   color: #1B263B;

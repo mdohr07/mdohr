@@ -67,7 +67,7 @@ button a:hover {
   padding: 0;
 }
 
-.updates {
+#updates {
   height: 200px;
   overflow: scroll;
 }

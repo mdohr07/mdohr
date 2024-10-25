@@ -36,7 +36,8 @@
           <a href="https://mdohr.bearblog.dev/" target="_blank">Blog</a>
           <a href="src/pages/about.html">About</a>
           <a href="src/pages/links.html">Links</a>
-          <a href="https://users2.smartgb.com/g/g.php?a=s&i=g26-39641-50" target="_blank" rel="noopener noreferrer">Guestbook</a>
+          <a href="https://users2.smartgb.com/g/g.php?a=s&i=g26-39641-50" target="_blank"
+            rel="noopener noreferrer">Guestbook</a>
           <!-- <a href="#">img</a>  -->
         </p>
       </nav>
@@ -59,11 +60,6 @@
           Be sure to head over to my logbook, where I record my discoveries in the IT universe and transmit updates on
           my favorite adventures, whether it’s drawing, painting, or taking my bicycle on a ride.
         </p>
-
-        <div style="text-align: right;">
-          <a href="https://tamanotchi.world/14487c"><img src="https://tamanotchi.world/i/14487"
-              alt="It's tamaNOTchi! Click to feed!"></a>
-        </div>
 
         <hr>
         <!-- h-card -->
@@ -94,6 +90,14 @@
             <a href="https://sketchfab.com/mdohr07" target="_blank" rel="me" class="u-url">Sketchfab</a>
           </p>
 
+          <!-- Tamanotchi -->
+          <div style="text-align: right;">
+            <a href="https://tamanotchi.world/14487c"><img src="https://tamanotchi.world/i/14487"
+                alt="It's tamaNOTchi! Click to feed!"></a>
+          </div>
+
+          <!-- Updates Section -->
+          <div id="updates"></div>
           <hr>
 
           <img src="src/img/assets/graphics/getacomp.jpg" alt="get a computer badge">
@@ -103,8 +107,8 @@
           <img src="src/img/assets/graphics/paws.png" alt="made with my own two paws badge">
           <img src="src/img/assets/graphics/yesterweb.gif" alt="yesterweb badge">
 
-
           <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+
         </div>
 
       </main>
@@ -114,6 +118,16 @@
       © mdohr07, 2024 / <a href="https://github.com/mdohr07/mdohr" target="_blank">Source Code</a>
     </footer>
   </div>
-</body>
 
+  <script>
+    // HTML-Datei laden und in die Seite einfügen
+    fetch('/src/content/updates.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('updates').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading the page:', error));
+  </script>
+
+</body>
 </html>

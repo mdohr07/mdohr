@@ -60,6 +60,17 @@ button a:hover {
   margin: 0 auto;
 }
 
+#updates {
+  height: 200px;
+  overflow: scroll;
+  border: 2px solid;
+  padding: 0.25rem 1rem 1rem 1rem;
+}
+
+/* #updates a, #updates a:hover, updates a:visited {
+  color: #1B263B;
+} */
+
 .title {
   background-color: #CCCC99;
   color: #1B263B;

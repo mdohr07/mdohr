@@ -67,6 +67,11 @@ button a:hover {
   padding: 0;
 }
 
+.updates {
+  height: 200px;
+  overflow: scroll;
+}
+
 .title {
   background-color: #CCCC99;
   color: #1B263B;

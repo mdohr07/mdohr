@@ -63,7 +63,7 @@ button a:hover {
 .hcard {
   background-image: url('../img/assets/graphics/funnyalien.gif');
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right top;
   padding: 0;
 }
 

@@ -70,6 +70,7 @@ button a:hover {
 #updates {
   height: 200px;
   overflow: scroll;
+  scrollbar-color: #1B263B #CC9;
 }
 
 .title {
@@ -133,6 +134,16 @@ footer {
 
   main {
     order: 1;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    flex-direction: column-reverse;
+    justify-items: center;
+  }
+
+  .isme {
+    float: none;
   }
 
   #navbar ul {

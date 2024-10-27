@@ -19,6 +19,33 @@
     <link rel="stylesheet" href="../styles/style.css">
 
     <title>About Me - Personal Profile</title>
+
+    <style>
+
+        .intro {
+            display: grid;
+            margin-bottom: 1rem;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 1rem;
+            text-align: justify;
+            align-items: center;
+            justify-content: space-between;
+            justify-items: end;
+        }
+
+        .isme {
+            width: 150px;
+            float: left;
+            margin: 0.5rem 1rem 1rem 0rem;
+            border-radius: 100px;
+            filter: contrast(90) brightness(10) saturate(1.0);
+        }
+
+        .isme:hover {
+            filter: none;
+            transition:ease 0.5s;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,13 +70,18 @@
         <div id="flex">
             <main>
                 <h1>About me</h1>
-                <p lang="en">I've put together a little profile for anyone who wants to find out a bit more about me. I
+                <div lang="en" class="intro">
+                    I've put together a little profile for anyone who wants to find out a bit more about me. I
                     find it very difficult to decide on my one favorite thing.
-                    There is also a section below with my skills.<br /><br />
-
+                    There is also a section below with my skills. <br/><br/>
+                    
                     But you can say that I like science fiction. I would also describe myself as a very creative person
                     and my personality type is INFJ(A).
-                </p>
+
+                    <img src="../img/assets/photo.png" alt="photo of myself" class="isme" />
+                </div>
+
+                <hr>
 
                 <ul lang="en">
                     <li>Favorite color: All of them!</li>

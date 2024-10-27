@@ -21,16 +21,19 @@
     <title>About Me - Personal Profile</title>
 
     <style>
-
         .intro {
-            display: grid;
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
             margin-bottom: 1rem;
-            grid-template-columns: 2fr 1fr;
-            grid-gap: 1rem;
             text-align: justify;
             align-items: center;
             justify-content: space-between;
-            justify-items: end;
+
+            @media only screen and (max-width: 800px) {
+                flex-direction: column;
+                justify-items: center;
+            }
         }
 
         .isme {
@@ -39,11 +42,15 @@
             margin: 0.5rem 1rem 1rem 0rem;
             border-radius: 100px;
             filter: contrast(90) brightness(10) saturate(1.0);
+
+            @media only screen and (max-width: 800px) {
+                float: none;
+            }
         }
 
         .isme:hover {
             filter: none;
-            transition:ease 0.5s;
+            transition: ease 0.5s;
         }
     </style>
 </head>
@@ -58,13 +65,14 @@
 
             <nav id="navbar" style="margin-bottom: 10px">
                 <p>
-                  <a href="https://mdohr.bearblog.dev/" target="_blank">Blog⌝</a>
-                  <a href="about.html">About</a>
-                  <a href="links.html">Links</a>
-                  <a href="https://users2.smartgb.com/g/g.php?a=s&i=g26-39641-50" target="_blank" rel="noopener noreferrer">Guestbook⌝</a>
-                  <!-- <a href="#">img</a>  -->
+                    <a href="https://mdohr.bearblog.dev/" target="_blank">Blog⌝</a>
+                    <a href="about.html">About</a>
+                    <a href="links.html">Links</a>
+                    <a href="https://users2.smartgb.com/g/g.php?a=s&i=g26-39641-50" target="_blank"
+                        rel="noopener noreferrer">Guestbook⌝</a>
+                    <!-- <a href="#">img</a>  -->
                 </p>
-              </nav>
+            </nav>
         </header>
 
         <div id="flex">
@@ -73,8 +81,8 @@
                 <div lang="en" class="intro">
                     I've put together a little profile for anyone who wants to find out a bit more about me. I
                     find it very difficult to decide on my one favorite thing.
-                    There is also a section below with my skills. <br/><br/>
-                    
+                    There is also a section below with my skills. <br /><br />
+
                     But you can say that I like science fiction. I would also describe myself as a very creative person
                     and my personality type is INFJ(A).
 
@@ -101,8 +109,8 @@
                     <li>Favorite cyclist: Marlen Reusser</li>
                     <li>Favorite ride snack: Oat snack or pretzel stick</li>
                 </ul>
-            </main> 
-        </div> 
+            </main>
+        </div>
 
         <footer id="footer" style="margin-top: 10px">
             © mdohr07, 2024 / <a href="https://github.com/mdohr07/mdohr" target="_blank">Source Code</a>

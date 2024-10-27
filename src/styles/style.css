@@ -39,6 +39,10 @@ hr {
   margin: 1.5rem 0rem;
 }
 
+img {
+  max-width: 100%;;
+}
+
 button {
   background-color: #ccc;
   border-top: #fff;
@@ -99,6 +103,7 @@ button a:hover {
 
 main {
   flex: 1;
+  width: 100%;
   padding: 20px;
   order: 2;
   margin-top: 1rem;
@@ -134,16 +139,6 @@ footer {
 
   main {
     order: 1;
-  }
-
-  .intro {
-    grid-template-columns: 1fr;
-    flex-direction: column-reverse;
-    justify-items: center;
-  }
-
-  .isme {
-    float: none;
   }
 
   #navbar ul {

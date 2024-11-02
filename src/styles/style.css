@@ -13,7 +13,7 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  background-color: #1B263B;
+  background-color: #000;
   color: #CCCC99;
   font-size: 1rem;
   cursor: url('/src/img/assets/cursors/ufocursor.gif'), auto;
@@ -102,6 +102,7 @@ button a:hover {
 }
 
 main {
+  background-color: #1B263B;
   flex: 1;
   width: 100%;
   padding: 20px;

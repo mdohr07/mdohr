@@ -1,3 +1,8 @@
+:root {
+  --darkColor: #111;
+  --lightColor: var(--lightColor);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,8 +18,8 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  background-color: #111111;
-  color: #CCCC99;
+  background-color: var(--darkColor);
+  color: var(--lightColor);
   font-size: 1rem;
   cursor: url('/src/img/assets/cursors/ufocursor.gif'), auto;
 }
@@ -22,20 +27,20 @@ body {
 a,
 a:hover,
 a:visited {
-  color: #CCCC99;
+  color: var(--lightColor);
   text-decoration: underline;
   cursor: url('/src/img/assets/cursors/pointer.gif'), auto;
 }
 
 code {
-  background-color: #CCCC99;
-  color: #111111;
+  background-color: var(--lightColor);
+  color: var(--darkColor);
   padding: 0 5px;
   border-radius: 3px;
 }
 
 hr {
-  color: #CCCC99;
+  color: var(--lightColor);
   margin: 1.5rem 0rem;
 }
 
@@ -54,7 +59,7 @@ button {
 
 button a,
 button a:hover {
-  color: #111111;
+  color: var(--darkColor);
   text-decoration: none;
   cursor: url('/src/img/assets/cursors/pointer.gif'), auto;
 }
@@ -65,32 +70,32 @@ button a:hover {
 }
 
 .hcard {
-  background-color: #CCCC99;
+  background-color: var(--lightColor);
   padding: 20px;
   margin-bottom: 2rem;
   border-radius: 10px;
-  color: #111;
+  color: var(--darkColor);
 }
 
 .hcard a,
 .hcard a:visited,
 .hcard a:active,
 .hcard a:hover {
-  color: #111;
+  color: var(--darkColor);
 }
 
 #updates {
   height: 200px;
   overflow: scroll;
-  scrollbar-color: #111111 #CC9;
+  scrollbar-color: var(--darkColor), var(--lightColor);
   border: 1px solid;
   padding: 20px;
   margin-bottom: 0.5rem;
 }
 
 .title {
-  background-color: #CCCC99;
-  color: #111111;
+  background-color: var(--lightColor);
+  color: var(--darkColor);
   padding: 5px 10px;
   font-size: 1em;
   font-weight: 400;
@@ -104,7 +109,7 @@ button a:hover {
 }
 
 #navbar a {
-  color: #CCCC99;
+  color: var(--lightColor);
   margin-right: 8px;
 }
 

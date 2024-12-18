@@ -1,6 +1,6 @@
 :root {
   --darkColor: #111;
-  --lightColor: #CCCC99;
+  --lightColor: #b5b5b5;
 }
 
 * {
@@ -100,6 +100,9 @@ button a:hover {
   font-size: 1em;
   font-weight: 400;
   display: inline-block;
+  -webkit-box-shadow:0px 0px 17px 0px rgba(255,255,255,0.22);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(255,255,255,0.22);
+  box-shadow: 0px 0px 17px 0px rgba(255,255,255,0.22);
 }
 
 /* navigation */

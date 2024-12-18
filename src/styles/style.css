@@ -13,7 +13,7 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  background-color: #202730;
+  background-color: #111111;
   color: #CCCC99;
   font-size: 1rem;
   cursor: url('/src/img/assets/cursors/ufocursor.gif'), auto;
@@ -29,7 +29,7 @@ a:visited {
 
 code {
   background-color: #CCCC99;
-  color: #202730;
+  color: #111111;
   padding: 0 5px;
   border-radius: 3px;
 }
@@ -54,7 +54,7 @@ button {
 
 button a,
 button a:hover {
-  color: #202730;
+  color: #111111;
   text-decoration: none;
   cursor: url('/src/img/assets/cursors/pointer.gif'), auto;
 }
@@ -65,16 +65,24 @@ button a:hover {
 }
 
 .hcard {
-  background-color: #333;
+  background-color: #CCCC99;
   padding: 20px;
   margin-bottom: 2rem;
   border-radius: 10px;
+  color: #111;
+}
+
+.hcard a,
+.hcard a:visited,
+.hcard a:active,
+.hcard a:hover {
+  color: #111;
 }
 
 #updates {
   height: 200px;
   overflow: scroll;
-  scrollbar-color: #202730 #CC9;
+  scrollbar-color: #111111 #CC9;
   border: 1px solid;
   padding: 20px;
   margin-bottom: 0.5rem;
@@ -82,7 +90,7 @@ button a:hover {
 
 .title {
   background-color: #CCCC99;
-  color: #202730;
+  color: #111111;
   padding: 5px 10px;
   font-size: 1em;
   font-weight: 400;

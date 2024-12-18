@@ -1,6 +1,6 @@
 :root {
   --darkColor: #111;
-  --lightColor: var(--lightColor);
+  --lightColor: #CCCC99;
 }
 
 * {

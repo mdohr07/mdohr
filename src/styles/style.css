@@ -8,9 +8,9 @@
 }
 
 body {
-  background-image: url('/src/img/assets/graphics/autumn-leaves.gif');
-	background-repeat: no-repeat;
-	background-position: top left;
+  background-image: url('https://i7.glitter-graphics.org/pub/2564/2564247ur7qupm30j.gif');
+  background-repeat: no-repeat;
+  background-position: 5% 5%;
   width: 100%;
   font-family: monospace;
   margin: 0;
@@ -73,7 +73,6 @@ button a:hover {
   background-color: var(--lightColor);
   padding: 20px;
   margin-bottom: 2rem;
-  border-radius: 10px;
   color: var(--darkColor);
 }
 

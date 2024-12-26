@@ -8,6 +8,7 @@
 }
 
 body {
+  background-image: url('/src/img/assets/graphics/stardust.png');
   font-family: monospace;
   margin: 0;
   padding: 20px;
@@ -80,6 +81,7 @@ button a:hover {
 }
 
 #updates {
+  background-color: var(--darkColor);
   height: 200px;
   overflow: scroll;
   scrollbar-color: var(--darkColor), var(--lightColor);

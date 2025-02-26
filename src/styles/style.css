@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   background-color: var(--darkColor);
   color: var(--lightColor);
-  font-size: 1.025rem;
+  font-size: 1.055rem;
   cursor: url('/src/img/assets/cursors/ufocursor.gif'), auto;
 }
 

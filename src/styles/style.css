@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   background-color: var(--darkColor);
   color: var(--lightColor);
-  font-size: 1rem;
+  font-size: 1.025em;
   cursor: url('/src/img/assets/cursors/ufocursor.gif'), auto;
 }
 
@@ -98,7 +98,7 @@ button a:hover {
   background-color: var(--lightColor);
   color: var(--darkColor);
   padding: 5px 10px;
-  font-size: 1em;
+  font-size: 1.025em;
   font-weight: 400;
   display: inline-block;
   -webkit-box-shadow:0px 0px 17px 0px rgba(255,255,255,0.22);

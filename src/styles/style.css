@@ -71,17 +71,8 @@ button a:hover {
 }
 
 .hcard {
-  background-color: var(--lightColor);
   padding: 20px;
   margin-bottom: 2rem;
-  color: var(--darkColor);
-}
-
-.hcard a,
-.hcard a:visited,
-.hcard a:active,
-.hcard a:hover {
-  color: var(--darkColor);
 }
 
 #updates {

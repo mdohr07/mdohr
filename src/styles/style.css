@@ -20,12 +20,52 @@ body {
   cursor: url('/src/img/assets/cursors/ufocursor.gif'), auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+    line-height: 1.5;
+    font-size: var(--font-scale);
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+    content: '# ';
+}
+
 a,
 a:hover,
 a:visited {
   color: var(--lightColor);
-  text-decoration: underline;
-  cursor: url('/src/img/assets/cursors/pointer.gif'), auto;
+  text-decoration: none;
+  cursor: url('https://mdohr.space/src/img/assets/cursors/pointer.gif'), auto;
+}
+
+a::before {
+    content: '[';
+}
+
+a::after {
+    content: ']';
+}
+
+a:has(img)::before,
+a:has(img)::after {
+  content: none;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 code {
@@ -80,21 +120,29 @@ button a:hover {
   height: 200px;
   overflow: scroll;
   scrollbar-color: var(--darkColor), var(--lightColor);
-  border-left: 5px solid;
   padding-left: 20px;
   margin-bottom: 2rem;
 }
 
-.title {
-  background-color: var(--lightColor);
-  color: var(--darkColor);
-  padding: 5px 10px;
-  font-size: 1.025em;
-  font-weight: 400;
-  display: inline-block;
-  -webkit-box-shadow:0px 0px 17px 0px rgba(255,255,255,0.22);
-  -moz-box-shadow: 0px 0px 17px 0px rgba(255,255,255,0.22);
-  box-shadow: 0px 0px 17px 0px rgba(255,255,255,0.22);
+h1.title {
+    font-size: 1.055rem;
+    padding: 5px 10px;
+	color: var(--lightColor);
+    border: 2px solid var(--lightColor);
+    display: inline-block;
+    font-weight: 400;
+    width: 100%;
+ 	-webkit-box-shadow:0px 0px 17px 0px rgba(255,255,255,0.22);
+	-moz-box-shadow: 0px 0px 17px 0px rgba(255,255,255,0.22);
+	box-shadow: 0px 0px 17px 0px rgba(255,255,255,0.22);
+}
+
+h1.title::before, .title::after {
+	content: '';
+}
+
+a h1.title::before {
+	content: '';
 }
 
 /* navigation */

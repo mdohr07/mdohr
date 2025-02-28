@@ -68,6 +68,14 @@ a:hover {
     text-decoration: none;
 }
 
+a:hover::before {
+	content: '/';
+}
+
+a:hover::after {
+	content: '/';
+}
+
 code {
   background-color: var(--lightColor);
   color: var(--darkColor);

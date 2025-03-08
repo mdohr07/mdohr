@@ -136,11 +136,11 @@ button a:hover {
 h1.title {
     font-size: 1.055rem;
     padding: 5px 10px;
-	color: var(--lightColor);
+    color: var(--lightColor);
     border: 2px solid var(--lightColor);
     display: inline-block;
     font-weight: 400;
-    width: 90%;
+    width: 97%;
  	-webkit-box-shadow:0px 0px 17px 0px rgba(255,255,255,0.22);
 	-moz-box-shadow: 0px 0px 17px 0px rgba(255,255,255,0.22);
 	box-shadow: 0px 0px 17px 0px rgba(255,255,255,0.22);

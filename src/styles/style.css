@@ -99,11 +99,12 @@ s {
 }
 
 strong,
-b,
-.highlight {
+b {
     color: var(--codeColor);
 	font-weight: normal;
 }
+
+.highlight { color: var(--codeColor); }
 
 img {
   max-width: 100%;

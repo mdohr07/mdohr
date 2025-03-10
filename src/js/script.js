@@ -1,16 +1,12 @@
-document.body.innerHTML = document.body.innerHTML.replace(
-    /\b\d+\b/g, 
-    '<span style="color:#ffdd56; font-weight:bold;">$&</span>'
-);
-
-/*
 document.addEventListener("DOMContentLoaded", function() {
-            let target = document.getElementById("content");
-            let wordsToHighlight = ["Elite Dangerous", "Mass Effect", "Turianer"];
-            
-            wordsToHighlight.forEach(word => {
-                let regex = new RegExp(`\\b${word}\\b`, "gi");
-                target.innerHTML = target.innerHTML.replace(regex, `<span class="highlight">${word}</span>`);
-            });
-        });
-*/
+    let iterator = document.createNodeIterator(document.body, NodeFilter.SHOW_TEXT, null); // geht durch alle Textknoten (kein HTML!) 
+    let node;
+    
+    while ((node = iterator.nextNode())) {
+        if (node.parentNode.tagName !== "A") { // Zahlen in <a>-Tags werden ignoriert
+            node.nodeValue = node.nodeValue.replace(/\b\d+\b/g, match => 
+                `\u200B<span style="color:#ffdd56;">${match}</span>\u200B` // Fügt unsichtbare Zeichen hinzu, um Zeilenumbrüche sauber zu halten.
+            );
+        }
+    }
+});

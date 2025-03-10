@@ -1,6 +1,10 @@
 :root {
   --darkColor: #111;
-  --lightColor: #efefef;
+  --lightColor: #f8f8f2;
+  --headingColor: #ff79c6;
+  --linkColor: #50fa7b;
+  --metaColor: #8be9fd;
+  --codeColor: #ffdd56;
 }
 
 * {
@@ -28,7 +32,7 @@ h4,
 h5,
 h6 {
     font-family: var(--font-main);
-    color: var(--heading-color);
+    color: var(--headingColor);
     line-height: 1.5;
     font-size: var(--font-scale);
     font-weight: normal;
@@ -47,7 +51,7 @@ h6::before {
 a,
 a:hover,
 a:visited {
-  color: var(--lightColor);
+  color: var(--linkColor);
   text-decoration: none;
   cursor: url('https://mdohr.space/src/img/assets/cursors/pointer.gif'), auto;
 }
@@ -78,8 +82,7 @@ a:hover::after {
 }
 
 code {
-  background-color: var(--lightColor);
-  color: var(--darkColor);
+  color: var(--codeColor);
   padding: 0 5px;
   border-radius: 3px;
 }
@@ -99,12 +102,9 @@ img:hover {
 }
 
 button {
-  background-color: #ccc;
-  border-top: #fff;
-  border-right: #999;
-  border-left: #fff;
-  border-bottom: #999;
-  padding: 3px 5px;
+  background-color: var(--linkColor);
+  border: none;
+  padding: 0px;
 }
 
 button a,
@@ -133,7 +133,7 @@ button a:hover {
   margin-bottom: 2rem;
 }
 
-h1.title {
+h1.title a {
     font-size: 1.055rem;
     padding: 5px 10px;
     color: var(--lightColor);
@@ -161,7 +161,7 @@ header .title a::before, header .title a::after {
 }
 
 #navbar a {
-  color: var(--lightColor);
+  color: var(--linkColor);
   margin-right: 8px;
 }
 
@@ -177,12 +177,13 @@ main {
   margin-bottom: 2rem;
 }
 
-#leftSidebar {
-  order: 1;
+ul {
+	list-style-type: square;
 }
 
-#rightSidebar {
-  order: 3;
+li::marker {
+	content: '$ ';
+	color: var(--metaColor);
 }
 
 footer {

@@ -99,7 +99,8 @@ s {
 }
 
 strong,
-b {
+b,
+.highlight {
     color: var(--codeColor);
 	font-weight: normal;
 }

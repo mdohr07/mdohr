@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     
     while ((node = iterator.nextNode())) {
         if (node.parentNode.tagName !== "A") { // Zahlen in <a>-Tags werden ignoriert
-                node.nodeValue = node.nodeValue.replace(/\b\d+\b/g, match => `<code>${match}</code>`);
-            );
+            node.nodeValue = node.nodeValue.replace(/\b\d+\b/g, match => `<code>${match}</code>`);
         }
     }
 });
+

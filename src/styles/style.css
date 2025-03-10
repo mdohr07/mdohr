@@ -124,6 +124,10 @@ button a:hover {
   margin-bottom: 2rem;
 }
 
+.meta, date {
+	color: var(--metaColor);
+}
+
 #updates {
   background-color: var(--darkColor);
   height: 200px;

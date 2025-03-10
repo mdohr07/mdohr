@@ -101,6 +101,7 @@ s {
 strong,
 b {
     color: var(--codeColor);
+	font-weight: normal;
 }
 
 img {

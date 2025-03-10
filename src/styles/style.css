@@ -193,7 +193,7 @@ ul {
 
 li::marker {
 	content: '$ ';
-	color: var(--metaColor);
+	color: var(--codeColor);
 }
 
 footer {

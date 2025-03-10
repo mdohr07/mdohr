@@ -92,6 +92,12 @@ hr {
   margin: 1.5rem 0rem;
 }
 
+s {
+	color: var(--darkColor);
+	text-decoration-thickness: 20px;
+	text-decoration-color: var(--codeColor);
+}
+
 img {
   max-width: 100%;
   filter: grayscale(100%) contrast(2);

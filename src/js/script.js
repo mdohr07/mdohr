@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     while ((node = iterator.nextNode())) {
         if (node.parentNode.tagName !== "A") { // Zahlen in <a>-Tags werden ignoriert
-            node.nodeValue = node.nodeValue.replace(/\b\d+\b/g, match => 
-                `\u200B<span style="color:#ffdd56;">${match}</span>\u200B` // Fügt unsichtbare Zeichen hinzu, um Zeilenumbrüche sauber zu halten.
+                node.nodeValue = node.nodeValue.replace(/\b\d+\b/g, match => `<code>${match}</code>`);
             );
         }
     }

@@ -106,11 +106,6 @@ b {
 
 img {
   max-width: 100%;
-  filter: grayscale(100%) contrast(2);
-}
-
-img:hover {
-	filter: none;
 }
 
 button {

@@ -10,6 +10,8 @@
     content="personal website, IT specialist, web development, programming, painting, drawing, 3D modeling, retro games, journaling, road cycling, creative projects, mdohr07" />
   <meta name="author" content="mdohr07" />
 
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
   <!-- Open Graph Metadata for social media -->
   <meta property="og:title" content="mdohr's Website - Web Development, Art & More" />
   <meta property="og:description"
@@ -28,17 +30,18 @@
 <body>
   <div id="container">
     <header>
-	<h1 class="title">
-	  <a href="https://mdohr.space">mdohr's outpost</a>
-	</h1>
+      <h1 class="title">
+        <a href="https://mdohr.space">mdohr's outpost</a>
+      </h1>
 
       <nav id="navbar" style="margin-bottom: 10px">
         <p>
-          <a href="https://mdohr.bearblog.dev/" target="_blank" rel="me" >Blog⌝</a>
+          <a href="https://mdohr.bearblog.dev/" target="_blank" rel="me">Blog⌝</a>
           <a href="about.html">About</a>
           <a href="links.html">Links</a>
           <a href="now.html">Now</a>
-          <a href="https://users2.smartgb.com/g/g.php?a=s&i=g26-39641-50" target="_blank" rel="noopener noreferrer">Guestbook⌝</a>
+          <a href="https://users2.smartgb.com/g/g.php?a=s&i=g26-39641-50" target="_blank"
+            rel="noopener noreferrer">Guestbook⌝</a>
           <!-- <a href="#">img</a>  -->
         </p>
       </nav>
@@ -46,8 +49,11 @@
 
     <div id="flex">
       <main>
-        
-		
+
+        <div id="log-container">
+
+        </div>
+
       </main>
     </div>
 
@@ -57,8 +63,28 @@
   </div>
 
   <script>
-    
+    const fileAddress = '/src/content/log.md';
+    fetch(fileAddress)
+      .then(response => {
+        // handle the response
+        if (!response.ok) {
+          throw new Error('Log could not be loaded.');
+        }
+        return response.text();
+      })
+      .then(markdown => {
+        // Turn Markdown into HTML
+        const htmlContent = marked.parse(markdown);
+
+        // Insert into the page
+        document.getElementById('log-container').innerHTML = htmlContent;
+      })
+      .catch(error => {
+        // handle the error
+        document.getElementById('log-container').innerHTML = `<p>An error occured: ${error.message}</p>`;
+      });
   </script>
 
 </body>
+
 </html>

@@ -21,9 +21,8 @@ body {
   background-color: var(--darkColor);
   color: var(--lightColor);
   font-size: 1.055rem;
-  cursor: url('/src/img/assets/cursors/ufocursor.gif'), auto;
+  cursor: url("/src/img/assets/cursors/ufocursor.gif"), auto;
 }
-
 
 h1,
 h2,
@@ -31,12 +30,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-main);
-    color: var(--headingColor);
-    line-height: 1.5;
-    font-size: var(--font-scale);
-    font-weight: normal;
-    text-transform: uppercase;
+  font-family: var(--font-main);
+  color: var(--headingColor);
+  line-height: 1.5;
+  font-size: var(--font-scale);
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 h1::before,
@@ -45,7 +44,7 @@ h3::before,
 h4::before,
 h5::before,
 h6::before {
-    content: '# ';
+  content: "# ";
 }
 
 a,
@@ -53,15 +52,15 @@ a:hover,
 a:visited {
   color: var(--linkColor);
   text-decoration: none;
-  cursor: url('https://mdohr.space/src/img/assets/cursors/pointer.gif'), auto;
+  cursor: url("https://mdohr.space/src/img/assets/cursors/pointer.gif"), auto;
 }
 
 a::before {
-    content: '[';
+  content: "[";
 }
 
 a::after {
-    content: ']';
+  content: "]";
 }
 
 a:has(img)::before,
@@ -70,15 +69,29 @@ a:has(img)::after {
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover::before {
-	content: '/';
+  content: "/";
+}
+
+#log-container {
+  width: 97%;
+  white-space: pre-wrap;
+}
+
+#log-container p {
+  margin-bottom: 1em;
+}
+
+#log-container p::before {
+  content: "> ";
+  color: var(--headingColor);
 }
 
 a:hover::after {
-	content: '/';
+  content: "/";
 }
 
 code {
@@ -93,15 +106,15 @@ hr {
 }
 
 s {
-	color: var(--darkColor);
-	text-decoration-thickness: 20px;
-	text-decoration-color: var(--codeColor);
+  color: var(--darkColor);
+  text-decoration-thickness: 20px;
+  text-decoration-color: var(--codeColor);
 }
 
 strong,
 b {
-    color: var(--metaColor);
-	font-weight: normal;
+  color: var(--metaColor);
+  font-weight: normal;
 }
 
 img {
@@ -118,7 +131,7 @@ button a,
 button a:hover {
   color: var(--darkColor);
   text-decoration: none;
-  cursor: url('/src/img/assets/cursors/pointer.gif'), auto;
+  cursor: url("/src/img/assets/cursors/pointer.gif"), auto;
 }
 
 #container {
@@ -131,8 +144,9 @@ button a:hover {
   margin-bottom: 2rem;
 }
 
-.meta, date {
-	color: var(--metaColor);
+.meta,
+date {
+  color: var(--metaColor);
 }
 
 #updates {
@@ -145,24 +159,25 @@ button a:hover {
 }
 
 h1.title a {
-    font-size: 1.055rem;
-    padding: 5px 10px;
-    color: var(--lightColor);
-    border: 2px solid var(--lightColor);
-    display: inline-block;
-    font-weight: 400;
-    width: 97%;
- 	-webkit-box-shadow:0px 0px 17px 0px rgba(255,255,255,0.22);
-	-moz-box-shadow: 0px 0px 17px 0px rgba(255,255,255,0.22);
-	box-shadow: 0px 0px 17px 0px rgba(255,255,255,0.22);
+  font-size: 1.055rem;
+  padding: 5px 10px;
+  color: var(--lightColor);
+  border: 2px solid var(--lightColor);
+  display: inline-block;
+  font-weight: 400;
+  width: 97%;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(255, 255, 255, 0.22);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(255, 255, 255, 0.22);
+  box-shadow: 0px 0px 17px 0px rgba(255, 255, 255, 0.22);
 }
 
 header h1.title::before {
-	content: '';
+  content: "";
 }
 
-header .title a::before, header .title a::after {
-	content: '';
+header .title a::before,
+header .title a::after {
+  content: "";
 }
 
 /* navigation */
@@ -189,12 +204,12 @@ main {
 }
 
 ul {
-	list-style-type: square;
+  list-style-type: square;
 }
 
 li::marker {
-	content: '$ ';
-	color: var(--codeColor);
+  content: "$ ";
+  color: var(--codeColor);
 }
 
 footer {

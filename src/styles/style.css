@@ -1,10 +1,10 @@
 :root {
-  --darkColor: #0a0f14;        /* dunkleres Space-Schwarz */
-  --lightColor: #e0e0c0;       /* leicht grünlich-beiges Terminal-Weiß */
-  --headingColor: #00ffe1;     /* Cyan/Teal Glow für Überschriften */
-  --linkColor: #ffcc00;        /* Gelb wie alte LC-Displays */
-  --metaColor: #88c0d0;        /* Blasses Blau für Metadaten */
-  --codeColor: #ff66a1;        /* Neon-Rosa für Highlight */
+  --darkColor: #0a0f14;        
+  --lightColor: #e0e0c0;       
+  --headingColor: #00ffe1;     
+  --linkColor: #ffcc00;        
+  --metaColor: #88c0d0;        
+  --codeColor: #ff66a1;        
   
 }
 

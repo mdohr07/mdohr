@@ -1,3 +1,5 @@
+**09.05.2025 16:32** Code is working for now, computer says "yes". Time for takeoff.
+
 **08.05.2025 20:33** Sometimes I feel like my relationship with drawing is ruined
 
 **08.05.2025 13:48** When practicing programming I switch between feeling very clueless and very smart. Confidence fluctuates — rapidly.

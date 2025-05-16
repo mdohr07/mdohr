@@ -1,3 +1,5 @@
+**16.05.2025 09:15** Beatrix - legendary creature, Aeris - legendary creature... I approve
+
 **16.05.2025 09:12** NOOOOOO! MTG x Final Fantasy TwT
 
 **15.05.2025 15:17** By brain had enough for today

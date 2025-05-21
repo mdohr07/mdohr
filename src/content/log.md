@@ -1,3 +1,5 @@
+**21.05.2025 16:07** Should have switched IDEs earlier, the feel makes a huge difference
+
 **20.05.2025 19:20** Days are passing by slowly as of late
 
 **19.05.2025 13:36** Started playing Klonoa

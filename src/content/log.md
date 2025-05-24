@@ -1,4 +1,6 @@
 
+**24.05.2025 10:49** I wrote "stoolTip" instead of "toolTip"
+
 **23.05.2025 12:33** So...everyone went home except me. A bit lonely in the classroom...
 
 **21.05.2025 16:07** Should have switched IDEs earlier, the feel makes a huge difference
